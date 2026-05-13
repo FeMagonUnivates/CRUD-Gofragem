@@ -19,7 +19,7 @@ class GofragemController {
         $dao = new GofragemDao();
         $dao->salvar($gofragem);
 
-        header("Location: lista.php");
+        header("Location: listagofragem.php");
     }
 }
 
