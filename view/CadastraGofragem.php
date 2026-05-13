@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label>Tamanho</label>
         <input 
-            type="number" 
+            type="text" 
             placeholder="350 x 700, 150 x 130, ..." 
             name="tamanho" 
             required>

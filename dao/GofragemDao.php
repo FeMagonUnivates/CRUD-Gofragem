@@ -26,13 +26,13 @@ class GofragemDao {
 
         $gofragens = [];
 
-        foreach ($rows as $rows) {
+        foreach ($rows as $row) {
             $gofragens[] = new Gofragem(
-                $row['id'],
                 $row['tipo'],
                 $row['gramatura'],
                 $row['tamanho'],
                 $row['acabamento'],
+                $row['id'],
             );
         }
 

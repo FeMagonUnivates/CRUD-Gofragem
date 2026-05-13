@@ -3,5 +3,5 @@ CREATE TABLE gofragem (
 	tipo VARCHAR(50),
 	gramatura CHAR(3),
 	tamanho VARCHAR(10),
-	acabamento VARCHAR(10)
+	acabamento VARCHAR(100)
 )

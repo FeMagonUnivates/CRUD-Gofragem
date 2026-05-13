@@ -1,6 +1,6 @@
 <?php
 
-class ServicoGofragem {
+class Gofragem {
     private $id;            // id gerado pelo banco
     private $tipo;      // tipo de gofragem
     private $gramatura;     // gramatura do papel
