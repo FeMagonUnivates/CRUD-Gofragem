@@ -7,7 +7,7 @@ class DataBase {
     public function __construct() {
         $host       = "localhost";
         $porta      = "5432";
-        $database   = "gofragem";
+        $database   = "Gofragem";
         $usuario    = "postgres";
         $senha      = "postgres";
 

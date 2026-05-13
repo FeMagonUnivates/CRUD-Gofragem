@@ -12,7 +12,7 @@ class GofragemController {
         $gofragem = new Gofragem(
             $_POST['tipo'],
             $_POST['gramatura'],
-            $_POST['tamanho']
+            $_POST['tamanho'],
             $_POST['acabamento'],
         );
 

@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__ . '/../model/Database.php';
-require_once __DIR__ . '/../model/SercvicoGofragem.php';
+require_once __DIR__ . '/../Database.php';
+require_once __DIR__ . '/../model/ServicoGofragem.php';
 
 class GofragemDao {
-    private $tabela         = 'gofragem';
+    private $tabela = 'gofragem';
     private $connection;
 
     public function __construct() {
@@ -16,7 +16,7 @@ class GofragemDao {
         $sql    = "INSERT INTO $this->tabela (tipo, gramatura, tamanho, acabamento) VALUES (?, ?, ?, ?)";
         $stmt   = $this->connection->prepare($sql);
 
-        $stmt->execute([$gofragem->getTipo(), $gofragem->getGramatura(), $gofragem->getTamanho(), $gofragem->getAcabamento()])
+        $stmt->execute([$gofragem->getTipo(), $gofragem->getGramatura(), $gofragem->getTamanho(), $gofragem->getAcabamento()]);
     }
 
     public function listar() {
