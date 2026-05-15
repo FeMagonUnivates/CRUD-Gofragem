@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             required>
         <br>
 
-        <label>Gramatura do papel</label>
+        <label>Gramatura do papel (grama)</label>
         <input 
             type="number" 
             placeholder="170, 350, ..." 
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             required>
         <br>
 
-        <label>Tamanho</label>
+        <label>Tamanho (AAA x BBB)</label>
         <input 
             type="text" 
             placeholder="350 x 700, 150 x 130, ..." 
@@ -60,6 +60,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 
     <a href="listagofragem.php">Ver gofragens cadastradas</a>
+    <a href="../index.html">Voltar para Início</a>
+    
 </body>
 
 </html>

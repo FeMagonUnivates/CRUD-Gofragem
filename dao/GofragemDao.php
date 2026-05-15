@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../Database.php';
-require_once __DIR__ . '/../model/ServicoGofragem.php';
+require_once __DIR__ . '/../model/Gofragem.php';
 
 class GofragemDao {
     private $tabela = 'gofragem';

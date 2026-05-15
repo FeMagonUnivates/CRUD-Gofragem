@@ -2,7 +2,7 @@
 
 class Gofragem {
     private $id;            // id gerado pelo banco
-    private $tipo;      // tipo de gofragem
+    private $tipo;          // tipo de gofragem
     private $gramatura;     // gramatura do papel
     private $tamanho;       // tamanho do papel
     private $acabamento;    // acabamento do papel

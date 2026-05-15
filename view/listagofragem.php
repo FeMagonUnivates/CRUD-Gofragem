@@ -48,6 +48,7 @@ $gofragem   = $controller->listar();
     <?php endif; ?>
 
     <a href="cadastragofragem.php">Cadastrar nova gofragem</a>
+    <a href="../index.html">Voltar para Início</a>
 
 </body>
 
