@@ -19,47 +19,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+
+    <div class="conteudo">
     
-    <h2>Cadastro de Servico</h2>
+        <h2>Cadastro de Servico</h2>
 
-    <form action="" method="POST">
+        <form action="" method="POST">
 
-        <label>Tipo de servico</label>
-        <input 
-            type="text" 
-            placeholder="Grafocem, Rota, ..." 
-            name="grafica" 
-            required>
-        <br>
+            <label>Tipo de servico</label>
+            <input 
+                type="text" 
+                placeholder="Grafocem, Rota, ..." 
+                name="grafica" 
+                required>
+            <br>
 
-        <label>Data</label>
-        <input 
-            type="date"
-            name="data"
-            required>
-        <br>
+            <label>Data</label>
+            <input 
+                type="date"
+                name="data"
+                required>
+            <br>
 
-        <label>Quantidade de folhas</label>
-        <input 
-            type="number" 
-            placeholder="1000, 5500, ..." 
-            name="quantidade" 
-            required>
-        <br>
+            <label>Quantidade de folhas</label>
+            <input 
+                type="number" 
+                placeholder="1000, 5500, ..." 
+                name="quantidade" 
+                required>
+            <br>
 
-        <label>Tempo de serviço (minutos)</label>
-        <input 
-            type="number" 
-            placeholder="30, 240, ..."
-            name="tempo" 
-            required>
-        <br>
+            <label>Tempo de serviço (minutos)</label>
+            <input 
+                type="number" 
+                placeholder="30, 240, ..."
+                name="tempo" 
+                required>
+            <br>
 
-        <button type="submit">Cadastrar</button>
-    </form>
+            <button type="submit">Cadastrar</button>
+        </form>
 
-    <a href="listaservico.php">Ver servicos cadastrados</a>
-    <a href="../index.html">Voltar para Início</a>
+        <div class="links">
+            <div>
+                <a href="listaservico.php">Ver servicos cadastrados</a>
+            </div>
+            <div>
+                <a href="../index.html">Voltar para Início</a>
+            </div>
+        </div>
+    
+    </div>
     
 </body>
 
