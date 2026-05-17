@@ -14,41 +14,52 @@ $gofragem   = $controller->listar();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gofragens</title>
+    <link rel="stylesheet" href="../css/styleListaGofragem.css">
 </head>
 
 <body>
     
-    <h2>Gofragens cadastradas</h2>
+    <div class="conteudo">
 
-    <?php if (count($gofragem) > 0): ?>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Tipo de gofragem</th>
-                    <th>Gramatura do papel</th>
-                    <th>Tamanho</th>
-                    <th>Acabamento</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($gofragem as $gofragem): ?>
+        <h2>Gofragens cadastradas</h2>
+
+        <?php if (count($gofragem) > 0): ?>
+            <table border="1">
+                <thead>
                     <tr>
-                        <td><?= $gofragem->getId() ?></td>
-                        <td><?= $gofragem->getTipo() ?></td>
-                        <td><?= $gofragem->getGramatura() ?></td>
-                        <td><?= $gofragem->getTamanho() ?></td>
-                        <td><?= $gofragem->getAcabamento() ?></td>
+                        <th>ID</th>
+                        <th>Tipo de gofragem</th>
+                        <th>Gramatura do papel</th>
+                        <th>Tamanho</th>
+                        <th>Acabamento</th>
                     </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    <?php else: ?>
-        <p>Nenhuma gofragem cadastrada.</p>
-    <?php endif; ?>
+                </thead>
+                <tbody>
+                    <?php foreach ($gofragem as $gofragem): ?>
+                        <tr>
+                            <td><?= $gofragem->getId() ?></td>
+                            <td><?= $gofragem->getTipo() ?></td>
+                            <td><?= $gofragem->getGramatura() ?></td>
+                            <td><?= $gofragem->getTamanho() ?></td>
+                            <td><?= $gofragem->getAcabamento() ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        <?php else: ?>
+            <p>Nenhuma gofragem cadastrada.</p>
+        <?php endif; ?>
 
-    <a href="cadastragofragem.php">Cadastrar nova gofragem</a>
-    <a href="../index.html">Voltar para Início</a>
+        <div class="links">
+            <div>
+                <a href="cadastragofragem.php">Cadastrar nova gofragem</a>
+            </div>
+            <div>
+                <a href="../index.html">Voltar para Início</a>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 

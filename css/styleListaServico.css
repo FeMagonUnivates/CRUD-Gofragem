@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px;
+}
+
+.conteudo {
+    background-color: white;
+    width: 900px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+th {
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #999;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 16px;
+}
+
+.links {
+    text-align: center;
+}
+
+.links div {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
