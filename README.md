@@ -144,7 +144,7 @@ Este projeto foi desenvolvido para praticar:
 Desenvolvido por Fernando Weizenmann
 
 GitHub:  
-[:contentReference[oaicite:0]{index=0}](https://github.com/FeMagonUnivates)
+https://github.com/FeMagonUnivates
 
 Repositório:  
 :contentReference[oaicite:1]{index=1}
