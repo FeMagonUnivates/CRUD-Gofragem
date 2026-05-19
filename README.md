@@ -147,7 +147,7 @@ GitHub:
 https://github.com/FeMagonUnivates
 
 Repositório:  
-:contentReference[oaicite:1]{index=1}
+https://github.com/FeMagonUnivates/Projeto_pratico_01_web2026a.git
 
 ---
 
