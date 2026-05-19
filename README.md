@@ -157,9 +157,3 @@ https://github.com/FeMagonUnivates
 
 Repositório:  
 https://github.com/FeMagonUnivates/Projeto_pratico_01_web2026a.git
-
----
-
-## 📄 Licença
-
-Projeto desenvolvido para fins educacionais.
