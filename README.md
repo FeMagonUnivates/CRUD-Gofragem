@@ -65,16 +65,6 @@ Projeto_pratico_01_web2026a/
 
 ---
 
-## 🖥 Interface do Sistema
-
-### Tela de Cadastro de Gofragem
-
-- Interface limpa e organizada
-- Processo simples de cadastro
-- Integração com banco de dados PostgreSQL
-
----
-
 ## 🗄 Banco de Dados
 
 O projeto utiliza PostgreSQL como sistema de gerenciamento de banco de dados.
