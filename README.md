@@ -65,21 +65,6 @@ Projeto_pratico_01_web2026a/
 
 ---
 
-## ⚙️ Funcionalidades
-
-### Gerenciamento de Gofragem
-- Cadastro de tipos de gofragem
-- Definição de gramatura do papel
-- Definição de tamanho
-- Definição de acabamento
-- Visualização das gofragens cadastradas
-
-### Gerenciamento de Serviços
-- Cadastro de serviços
-- Listagem de serviços cadastrados
-
----
-
 ## 🖥 Interface do Sistema
 
 ### Tela de Cadastro de Gofragem
