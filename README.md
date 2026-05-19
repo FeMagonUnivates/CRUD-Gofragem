@@ -79,6 +79,15 @@ O projeto utiliza PostgreSQL como sistema de gerenciamento de banco de dados.
 | tamanho | Dimensões da folha |
 | acabamento | Tipo de acabamento |
 
+### Entidade Servico
+
+| Campo | Descrição |
+|---|---|
+| id | Identificador do registro |
+| grafica | Nome da gráfica |
+| data | Data do serviço |
+| quantidade | Quantidade de folhas |
+| tempo | Minutos de serviço |
 ---
 
 ## 🚀 Como Executar o Projeto
