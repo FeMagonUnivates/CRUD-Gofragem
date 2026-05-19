@@ -30,7 +30,7 @@ $gofragem   = $controller->listar();
                         <th>ID</th>
                         <th>Tipo de gofragem</th>
                         <th>Gramatura do papel</th>
-                        <th>Tamanho</th>
+                        <th>Tamanho (mm)</th>
                         <th>Acabamento</th>
                     </tr>
                 </thead>

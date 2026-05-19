@@ -31,7 +31,7 @@ $servico   = $controller->listar();
                         <th>Gráfica</th>
                         <th>Data</th>
                         <th>Quantidade</th>
-                        <th>Tempo</th>
+                        <th>Tempo (min)</th>
                     </tr>
                 </thead>
                 <tbody>
