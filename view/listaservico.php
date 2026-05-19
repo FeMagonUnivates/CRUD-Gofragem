@@ -24,7 +24,7 @@ $servico   = $controller->listar();
         <h2>Serviços cadastrados</h2>
 
         <?php if (count($servico) > 0): ?>
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <th>ID</th>

@@ -24,7 +24,7 @@ $gofragem   = $controller->listar();
         <h2>Gofragens cadastradas</h2>
 
         <?php if (count($gofragem) > 0): ?>
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <th>ID</th>
