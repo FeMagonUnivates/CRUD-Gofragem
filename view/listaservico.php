@@ -42,6 +42,15 @@ $servico   = $controller->listar();
                             <td><?= $servico->getData() ?></td>
                             <td><?= $servico->getQuantidade() ?></td>
                             <td><?= $servico->getTempo() ?></td>
+                            <td>
+                                <a href="editaservico.php?id=<?= $servico->getId() ?>">Editar</a>
+
+                                <form action="deletaservico.php" method="POST" style="display:inline"
+                                    onsubmit="return confirm('Deseja realmente excluir o serviço?')">
+                                    <input type="hidden" name="id" value="<?= $servico->getId() ?>">
+                                    <button type="submit">Deletar</button>
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

@@ -16,7 +16,12 @@ class GofragemDao {
         $sql    = "INSERT INTO $this->tabela (tipo, gramatura, tamanho, acabamento) VALUES (?, ?, ?, ?)";
         $stmt   = $this->connection->prepare($sql);
 
-        $stmt->execute([$gofragem->getTipo(), $gofragem->getGramatura(), $gofragem->getTamanho(), $gofragem->getAcabamento()]);
+        $stmt->execute([
+            $gofragem->getTipo(), 
+            $gofragem->getGramatura(), 
+            $gofragem->getTamanho(), 
+            $gofragem->getAcabamento()
+        ]);
     }
 
     public function listar() {

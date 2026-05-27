@@ -16,7 +16,46 @@ class ServicoDao {
         $sql    = "INSERT INTO $this->tabela (grafica, data, quantidade, tempo) VALUES (?, ?, ?, ?)";
         $stmt   = $this->connection->prepare($sql);
 
-        $stmt->execute([$servico->getGrafica(), $servico->getData(), $servico->getQuantidade(), $servico->getTempo()]);
+        $stmt->execute([
+            $servico->getGrafica(), 
+            $servico->getData(), 
+            $servico->getQuantidade(), 
+            $servico->getTempo()
+        ]);
+    }
+
+    public function buscarPorId($id) {
+        $sql  = "SELECT * FROM $this->tabela WHERE id = ?";
+        $stmt = $this->connection->prepare($sql);
+        $stmt->execute([$id]);
+        $row  = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if (!$row) return null;
+
+        return new Servico(
+            $row['grafica'],
+            $row['data'],
+            $row['quantidade'],
+            $row['tempo'],
+            $row['id'],
+        );
+    }
+
+    public function atualizar(Servico $servico) {
+        $sql  = "UPDATE $this->tabela SET grafica = ?, data = ?, quantidade = ?, tempo = ? WHERE id = ?";
+        $stmt = $this->connection->prepare($sql);
+        $stmt->execute([
+            $servico->getGrafica(), 
+            $servico->getData(), 
+            $servico->getQuantidade(), 
+            $servico->getTempo()
+        ]);
+    }
+
+    public function deletar($id) {
+        $sql  = "DELETE FROM $this->tabela WHERE id = ?";
+        $stmt = $this->connection->prepare($sql);
+        $stmt->execute([$id]);
     }
 
     public function listar() {

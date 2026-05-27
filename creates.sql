@@ -4,7 +4,7 @@ CREATE TABLE gofragem (
 	gramatura CHAR(3),
 	tamanho VARCHAR(10),
 	acabamento VARCHAR(100)
-)
+);
 
 CREATE TABLE servico (
 	id SERIAL PRIMARY KEY,
@@ -12,4 +12,4 @@ CREATE TABLE servico (
 	data date,
 	quantidade INT,
 	tempo int
-)
+);
