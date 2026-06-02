@@ -32,6 +32,7 @@ $servico   = $controller->listar();
                         <th>Data</th>
                         <th>Quantidade</th>
                         <th>Tempo (min)</th>
+                        <th>Editar / Excluir</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,12 +44,12 @@ $servico   = $controller->listar();
                             <td><?= $servico->getQuantidade() ?></td>
                             <td><?= $servico->getTempo() ?></td>
                             <td>
-                                <a href="editaservico.php?id=<?= $servico->getId() ?>">Editar</a>
+                                <a class="btn-editar" href="editaservico.php?id=<?= $servico->getId() ?>">Editar</a>
 
                                 <form action="deletaservico.php" method="POST" style="display:inline"
                                     onsubmit="return confirm('Deseja realmente excluir o serviço?')">
                                     <input type="hidden" name="id" value="<?= $servico->getId() ?>">
-                                    <button type="submit">Deletar</button>
+                                    <button type="submit" class="btn-excluir">Excluir</button>
                                 </form>
                             </td>
                         </tr>

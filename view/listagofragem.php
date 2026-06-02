@@ -32,6 +32,7 @@ $gofragem   = $controller->listar();
                         <th>Gramatura do papel</th>
                         <th>Tamanho (mm)</th>
                         <th>Acabamento</th>
+                        <th>Editar / Excluir</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,6 +43,15 @@ $gofragem   = $controller->listar();
                             <td><?= $gofragem->getGramatura() ?></td>
                             <td><?= $gofragem->getTamanho() ?></td>
                             <td><?= $gofragem->getAcabamento() ?></td>
+                            <td>
+                                <a class="btn-editar" href="editagofragem.php?id=<?= $gofragem->getId() ?>">Editar</a>
+
+                                <form action="deletagofragem.php" method="POST" style="display:inline"
+                                    onsubmit="return confirm('Deseja realmente excluir a gofragem?')">
+                                    <input type="hidden" name="id" value="<?= $gofragem->getId() ?>">
+                                    <button type="submit" class="btn-excluir">Excluir</button>
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

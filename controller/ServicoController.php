@@ -20,7 +20,7 @@ class ServicoController {
             $_POST['data'],
             $_POST['quantidade'],
             $_POST['tempo'],
-            $_POST['id']
+            $_POST['id'],
         );
 
         $dao = new ServicoDao();

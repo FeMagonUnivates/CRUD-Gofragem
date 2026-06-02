@@ -48,7 +48,8 @@ class ServicoDao {
             $servico->getGrafica(), 
             $servico->getData(), 
             $servico->getQuantidade(), 
-            $servico->getTempo()
+            $servico->getTempo(),
+            $servico->getId()
         ]);
     }
 

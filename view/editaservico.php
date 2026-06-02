@@ -31,7 +31,7 @@ if (!$servico) {
 
     <div class="conteudo">
     
-        <h2>Cadastro de Servico</h2>
+        <h2>Atualizar Servico</h2>
 
         <form action="" method="POST">
 
@@ -72,7 +72,9 @@ if (!$servico) {
             <button type="submit">Salvar alterações</button>
         </form>
 
-        <a href="listaservico.php">Cancelar</a>
+        <div class="links">
+            <a href="listaservico.php">Cancelar</a>
+        </div>
     
     </div>
     
