@@ -8,11 +8,13 @@ Este projeto foi desenvolvido como atividade prática acadêmica com foco em des
 
 O sistema permite:
 
-- Cadastro de gofragens
-- Cadastro de serviços
-- Listagem de registros cadastrados
-- Armazenamento de dados em PostgreSQL
-- Organização da aplicação utilizando arquitetura MVC
+- Cadastro de gofragens;
+- Cadastro de serviços;
+- Edição e exclusão de registros;
+- Listagem de registros cadastrados;
+- Armazenamento de dados em PostgreSQL;
+- Organização da aplicação utilizando arquitetura MVC;
+- Utilização de variáveis de ambiente para configuração segura da conexão com o banco de dados.
 
 ### O que é Gofragem?
 
@@ -20,14 +22,26 @@ Gofragem é um processo aplicado em folhas de papel para criar texturas e efeito
 
 ---
 
+## 🌐 Demonstração
+
+O projeto encontra-se hospedado em uma máquina virtual e pode ser acessado pelo link abaixo:
+
+**Aplicação:**
+
+http://177.44.248.29/fernando-magon/Projeto_pratico_01_web2026a/
+
+---
+
 ## 🛠 Tecnologias Utilizadas
 
-- PHP
+- PHP 8+
 - PostgreSQL
 - HTML5
 - CSS3
 - Arquitetura MVC
-- XAMPP
+- PDO
+- Variáveis de Ambiente
+- Máquina Virtual (VM)
 - pgAdmin 4
 
 ---
@@ -52,14 +66,24 @@ Projeto_pratico_01_web2026a/
 ├── view/
 │   ├── cadastrogofragem.php
 │   ├── cadastroservico.php
+│   ├── editagofragem.php
+│   ├── editaservico.php
+│   ├── deletagofragem.php
+│   ├── deletaservico.php
 │   ├── listagofragem.php
 │   └── listaservico.php
 │
 ├── css/
 │   └── arquivos de estilo
 │
-├── creates.sql
+├── controller/
+├── dao/
+├── model/
+├── view/
 ├── Database.php
+├── Env.php
+├── creates.sql
+├── README.md
 └── index.html
 ```
 
@@ -87,17 +111,37 @@ O projeto utiliza PostgreSQL como sistema de gerenciamento de banco de dados.
 | grafica | Nome da gráfica |
 | data | Data do serviço |
 | quantidade | Quantidade de folhas |
-| tempo | Minutos de serviço |
+| tempo | Tempo de execução do serviço (minutos) |
+
 ---
+
+## 🔐 Configuração do Banco de Dados
+
+A conexão com o PostgreSQL é realizada utilizando variáveis de ambiente, carregadas pelo arquivo `Env.php`.
+
+Dessa forma, informações sensíveis como host, porta, nome do banco, usuário e senha não ficam expostas no código-fonte disponibilizado no GitHub.
+
+Exemplo das variáveis utilizadas:
+
+```text
+DB_HOST
+DB_PORT
+DB_NAME
+DB_USER
+DB_PASS
+```
+
+Os arquivos que contêm os valores reais dessas variáveis são ignorados pelo Git, garantindo maior segurança na publicação do projeto.
+```
 
 ## 🚀 Como Executar o Projeto
 
 ### Requisitos
 
-- XAMPP
-- PostgreSQL
-- pgAdmin 4
 - PHP 8+
+- PostgreSQL
+- Servidor web com suporte a PHP (Apache, Nginx, etc.)
+- pgAdmin 4 (opcional para administração do banco)
 
 ### Instalação
 
@@ -107,28 +151,24 @@ O projeto utiliza PostgreSQL como sistema de gerenciamento de banco de dados.
 git clone https://github.com/FeMagonUnivates/Projeto_pratico_01_web2026a.git
 ```
 
-2. Mova a pasta do projeto para o diretório `htdocs` do XAMPP.
+2. Configure um servidor web apontando para a pasta do projeto.
 
-3. Crie o banco de dados no PostgreSQL.
+3. Crie o banco de dados PostgreSQL.
 
-4. Execute o script:
+4. Execute o script de criação das tabelas:
 
 ```bash
 creates.sql
 ```
 
-5. Configure a conexão com o banco de dados no arquivo:
+5. Configure as variáveis de ambiente utilizadas pela aplicação.
 
-```bash
-Database.php
-```
+6. Certifique-se de que o servidor web tenha acesso ao PostgreSQL.
 
-6. Inicie o Apache pelo XAMPP.
+7. Acesse a aplicação pelo navegador:
 
-7. Abra no navegador:
-
-```bash
-http://localhost/Projeto_pratico_01_web2026a
+```text
+http://177.44.248.29/fernando-magon/Projeto_pratico_01_web2026a/
 ```
 
 ---
@@ -137,20 +177,22 @@ http://localhost/Projeto_pratico_01_web2026a
 
 Este projeto foi desenvolvido para praticar:
 
-- Arquitetura MVC
-- Operações CRUD
-- Integração entre PHP e PostgreSQL
-- Programação Orientada a Objetos
-- Persistência de dados
-- Estruturação de projetos web
-- Utilização do padrão DAO
-- Estilização com HTML e CSS
+- Arquitetura MVC;
+- Operações CRUD;
+- Integração entre PHP e PostgreSQL;
+- Programação Orientada a Objetos;
+- Persistência de dados;
+- Estruturação de projetos web;
+- Utilização do padrão DAO;
+- Uso do PDO para acesso ao banco de dados;
+- Configuração segura através de variáveis de ambiente;
+- Estilização com HTML e CSS.
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por Fernando Weizenmann
+**Fernando Weizenmann**
 
 GitHub:  
 https://github.com/FeMagonUnivates
