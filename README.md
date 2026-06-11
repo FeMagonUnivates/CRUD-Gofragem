@@ -16,6 +16,8 @@ O sistema permite:
 - Organização da aplicação utilizando arquitetura MVC;
 - Utilização de variáveis de ambiente para configuração segura da conexão com o banco de dados.
 
+---
+
 ### O que é Gofragem?
 
 Gofragem é um processo aplicado em folhas de papel para criar texturas e efeitos visuais em relevo. O sistema permite registrar diferentes tipos de gofragem, gramaturas, tamanhos e acabamentos.
@@ -83,6 +85,7 @@ Projeto_pratico_01_web2026a/
 └── index.html
 ```
 
+---
 
 ## 🗄 Banco de Dados
 
@@ -108,6 +111,7 @@ O projeto utiliza PostgreSQL como sistema de gerenciamento de banco de dados.
 | quantidade | Quantidade de folhas |
 | tempo | Tempo de execução do serviço (minutos) |
 
+---
 
 ## 🔐 Configuração do Banco de Dados
 
@@ -126,7 +130,8 @@ DB_PASS
 ```
 
 Os arquivos que contêm os valores reais dessas variáveis são ignorados pelo Git, garantindo maior segurança na publicação do projeto.
-```
+
+---
 
 ## 🚀 Como Executar o Projeto
 
