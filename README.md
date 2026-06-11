@@ -55,6 +55,9 @@ Projeto_pratico_01_web2026a/
 │   ├── GofragemController.php
 │   └── ServicoController.php
 │
+├── css/
+│   └── arquivos de estilo
+|
 ├── dao/
 │   ├── GofragemDao.php
 │   └── ServicoDao.php
@@ -73,13 +76,6 @@ Projeto_pratico_01_web2026a/
 │   ├── listagofragem.php
 │   └── listaservico.php
 │
-├── css/
-│   └── arquivos de estilo
-│
-├── controller/
-├── dao/
-├── model/
-├── view/
 ├── Database.php
 ├── Env.php
 ├── creates.sql
@@ -87,7 +83,6 @@ Projeto_pratico_01_web2026a/
 └── index.html
 ```
 
----
 
 ## 🗄 Banco de Dados
 
@@ -113,7 +108,6 @@ O projeto utiliza PostgreSQL como sistema de gerenciamento de banco de dados.
 | quantidade | Quantidade de folhas |
 | tempo | Tempo de execução do serviço (minutos) |
 
----
 
 ## 🔐 Configuração do Banco de Dados
 
