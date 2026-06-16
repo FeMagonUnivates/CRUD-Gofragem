@@ -133,45 +133,6 @@ Os arquivos que contêm os valores reais dessas variáveis são ignorados pelo G
 
 ---
 
-## 🚀 Como Executar o Projeto
-
-### Requisitos
-
-- PHP 8+
-- PostgreSQL
-- Servidor web com suporte a PHP (Apache, Nginx, etc.)
-- pgAdmin 4 (opcional para administração do banco)
-
-### Instalação
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/FeMagonUnivates/Projeto_pratico_01_web2026a.git
-```
-
-2. Configure um servidor web apontando para a pasta do projeto.
-
-3. Crie o banco de dados PostgreSQL.
-
-4. Execute o script de criação das tabelas:
-
-```bash
-creates.sql
-```
-
-5. Configure as variáveis de ambiente utilizadas pela aplicação.
-
-6. Certifique-se de que o servidor web tenha acesso ao PostgreSQL.
-
-7. Acesse a aplicação pelo navegador:
-
-```text
-http://177.44.248.29/fernando-magon/Projeto_pratico_01_web2026a/
-```
-
----
-
 ## 📖 Objetivos de Aprendizado
 
 Este projeto foi desenvolvido para praticar:
