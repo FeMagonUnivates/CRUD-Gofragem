@@ -1,4 +1,4 @@
-# Projeto Prático Web 2026A
+# CRUD Gofragem
 
 Sistema web desenvolvido em PHP utilizando o padrão de arquitetura MVC para gerenciamento de gofragens e serviços.
 
