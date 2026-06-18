@@ -51,7 +51,7 @@ http://177.44.248.29/fernando-magon/CRUD-Gofragem/
 ## 📂 Estrutura do Projeto
 
 ```bash
-Projeto_pratico_01_web2026a/
+CRUD-Gofragem
 │
 ├── controller/
 │   ├── GofragemController.php
