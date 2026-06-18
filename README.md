@@ -30,7 +30,7 @@ O projeto encontra-se hospedado em uma máquina virtual e pode ser acessado pelo
 
 **Aplicação:**
 
-http://177.44.248.29/fernando-magon/Projeto_pratico_01_web2026a/
+http://177.44.248.29/fernando-magon/CRUD-Gofragem/
 
 ---
 
@@ -158,4 +158,4 @@ GitHub:
 https://github.com/FeMagonUnivates
 
 Repositório:  
-https://github.com/FeMagonUnivates/Projeto_pratico_01_web2026a.git
+https://github.com/FeMagonUnivates/CRUD-Gofragem.git
